@@ -3,7 +3,7 @@ import Display from "./components/Display"
 import Buttons from "./components/Buttons"
 
 function App() {
-  const [ Result, setResult ] = useState('')
+  const [Result, setResult] = useState('')
   
   useEffect(() => { document.title = "Calculator / React" })
 
@@ -26,7 +26,6 @@ function App() {
       case '*':
         if (Result === "0") {
           setResult(value)
-
         } else {
           setResult(Result + value)
         }
@@ -53,6 +52,15 @@ function App() {
       <main className="bg-gradient-to-l from-indigo-500 to-sky-500 animate-background flex items-center justify-center h-screen w-screen px-2 py-24 md:px-8">
         <div className="w-full md:w-96 bg-white bg-opacity-40 backdrop-blur-lg rounded-xl drop-shadow-lg text-center">
           <div className="p-5 overflow-hidden text-white">
+            {/* Заголовок калькулятора */}
+            <h1 className="text-2xl font-bold mb-4">Калькулятор</h1>
+            
+            {/* Добавим описание "Средняя школа Намдон" */}
+            <p className="text-lg text-white opacity-80 mb-6">
+              Средняя школа Намдон — это место, где даже калькуляторы могут быть крутыми!
+            </p>
+            
+            {/* Компоненты Display и Buttons */}
             <Display value={Result} />
             <Buttons Buttonclicked={handleclicks} />
           </div>
