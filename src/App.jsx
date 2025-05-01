@@ -53,11 +53,11 @@ function App() {
         <div className="w-full md:w-96 bg-white bg-opacity-40 backdrop-blur-lg rounded-xl drop-shadow-lg text-center">
           <div className="p-5 overflow-hidden text-white">
             {/* Заголовок калькулятора */}
-            <h1 className="text-2xl font-bold mb-4">Калькулятор</h1>
+            <h1 className="text-2xl font-bold mb-4">Namdong middle school</h1>
             
             {/* Добавим описание "Средняя школа Намдон" */}
             <p className="text-lg text-white opacity-80 mb-6">
-              Средняя школа Намдон — это место, где даже калькуляторы могут быть крутыми!
+              The best school ever not gonna lie!
             </p>
             
             {/* Компоненты Display и Buttons */}
